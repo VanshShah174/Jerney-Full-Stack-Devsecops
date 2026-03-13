@@ -15,7 +15,8 @@ on:
 
 # Security: restrict default permissions to read-only
 permissions:
-  contents: read
+  contents: write
+  packages: write # Needed to push to GHCR
 
 env:
   DOCKER_REGISTRY: ghcr.io
