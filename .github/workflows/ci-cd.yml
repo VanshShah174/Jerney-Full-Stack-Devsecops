@@ -115,7 +115,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/${{ github.repository }}/jerney-${{ matrix.component }}
+          images: ghcr.io/vanshshah174/jerney-full-stack-devsecops/jerney-${{ matrix.component }}
           tags: |
             type=sha,prefix=
             type=ref,event=branch
